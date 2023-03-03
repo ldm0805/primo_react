@@ -8,7 +8,11 @@ import ToDoList from './ToDoList';
   todoList={todos} passiamo dei dati con le props
 */}
 function App() {
-  const [todos, setTodos] = useState(['Todo', 'Todotwo'])
+  const [todos, setTodos] = useState([{
+    id: 1,
+    name: 'Todo',
+    complete: true
+  }])
   return (
     <>
       <ToDoList todosList={todos} />
